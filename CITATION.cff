@@ -9,3 +9,6 @@ authors:
     given-names: Frank X.
     affiliation: The George Washington University
 license: MIT
+doi: "10.5281/zenodo.23869797"
+repository-code: "https://github.com/scottmoe-oirg/constrained-field-space-paper1"
+version: "1.0.0"

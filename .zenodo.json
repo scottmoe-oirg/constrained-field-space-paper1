@@ -22,5 +22,12 @@
   ],
   "description": "Analysis code and derived data for S. Moerschbacher and F. X. Lee, \"Constrained field-space estimators for background-field lattice observables\". The package reproduces every table and figure of the paper from the archival quenched nucleon and decuplet correlators (raw correlators available from the authors on request). See README.md for the stage-by-stage map and verification status.",
   "version": "1.0.0",
-  "language": "eng"
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/scottmoe-oirg/constrained-field-space-paper1",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
 }
