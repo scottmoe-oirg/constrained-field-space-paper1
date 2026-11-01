@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the paper."
+title: "Reproducibility package: Constrained field-space estimators for background-field lattice observables"
+authors:
+  - family-names: Moerschbacher
+    given-names: Scott
+    affiliation: Open Inquiry Research Group
+  - family-names: Lee
+    given-names: Frank X.
+    affiliation: The George Washington University
+license: MIT
