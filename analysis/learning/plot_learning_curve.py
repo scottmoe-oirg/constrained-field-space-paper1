@@ -19,6 +19,6 @@ for i, particle in enumerate(["P", "N"]):
 for val, lab in ((4, r"fixed O4 $|L_4|=4$"), (20, r"fixed O4 $|L_6|=20$")):
     ax.axhline(val, color="0.4", ls=":" if val == 4 else "--", lw=1); ax.text(560, val * 1.25, lab, fontsize=8, color="0.3")
 ax.set_xlabel("Subset size $N$"); ax.set_ylabel(r"$|L_4|$, $|L_6|$ of O4-constrained BLUE")
-ax.set_yscale("log"); ax.set_ylim(1, 3e6); ax.legend(loc="lower left", bbox_to_anchor=(0.01, 0.3), ncol=2); ax.grid(True, which="both", alpha=0.25)
+ax.set_yscale("log"); ax.set_ylim(1, 3e6); ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.01), ncol=4, frameon=False); ax.grid(True, which="both", alpha=0.25)
 fig.tight_layout(); fig.savefig("fig_learning_curve_leverage_v4.pdf", bbox_inches="tight"); fig.savefig("fig_learning_curve_leverage_v4.png", dpi=200, bbox_inches="tight")
 print(pd.concat({p: s[s.particle == p].groupby("N")[["L4", "L6"]].apply(lambda v: np.abs(v).quantile(.1)) for p in "PN"}))
