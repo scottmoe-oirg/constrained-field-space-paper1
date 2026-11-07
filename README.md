@@ -1,10 +1,26 @@
 # Reproducibility package: Constrained field-space estimators for background-field lattice QCD observables
 
-S. Moerschbacher and F. X. Lee, Phys. Rev. D (submitted). arXiv: [ARXIV ID]
+S. Moerschbacher and F. X. Lee, arXiv: [ARXIV ID] (2026).
+Code and derived data: doi:10.5281/zenodo.23869797 · https://github.com/scottmoe-oirg/constrained-field-space-paper1
 
-This package regenerates every table and figure of the paper from the archived background-field
-correlators (quenched Wilson, 24^3x48, poly11-small ensemble). The correlators themselves are available
-from the authors on request; everything downstream of the per-replica field responses is included here.
+This package contains the code that produces every table and figure of the paper from the archived
+background-field correlators (quenched Wilson, 24^3x48, poly11-small ensemble), together with the derived
+data those analyses produce.
+
+## What can be reproduced
+
+- **Without the correlators (from this package alone):** stage 6 (leverage frontier, Fig. 1, the
+  displacement table, Fig. 2) and the synthetic study of stage 7: `./run_all.sh 6 7`. All the derived
+  data behind the remaining tables are also included in `data/derived/`, so every number in the paper
+  can be checked against them directly.
+- **With the correlators (available from the authors on request):** the full pipeline, stages 0-10,
+  from the raw correlators to the derived data. Point `PAPER1_CORRELATORS` at a directory containing
+  `octet/OCT_N/` and `octet/OCT_P/` (one text file per configuration, `cfly_2448_NNN.OCT_N` / `.OCT_P`)
+  and `decuplet/` (built by stage 0 from the raw `DEC_DP`, `DEC_DPP`, `DEC_D0`, `DEC_DM` files; set
+  `RAW_DECUPLET`).
+
+The authors have rerun every stage from the correlators and compared the outputs with `data/derived/`
+(see Verification status below).
 
 ## Layout
 
@@ -78,7 +94,8 @@ Every stage has now been rerun from this package against the raw correlators, an
 
 ## Requirements
 
-Python 3.10+, numpy, scipy, matplotlib.
+Python 3.10+ with numpy, scipy, pandas and matplotlib (`pip install -r requirements.txt`).
+The verification runs used Python 3.13.16, numpy 2.5.3, scipy 1.18.1, pandas 3.0.5 and matplotlib 3.11.2.
 
 ## Licence
 

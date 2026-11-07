@@ -6,7 +6,7 @@ Raw input:  <raw>/DEC_{ST}/DATA/cfly_2448_NNN.DEC_{ST}, lines
             G11(+parity), G22(+parity), G11(-parity), G22(-parity); the raw MINUS tag is physical +B.
 Output:     <out>/s_{ST}_k{k}.npz with C[cfg, label, t, comp] (t = 0..31; comp 0 = Re G11, 1 = Re G22,
             positive parity), labels (01_PLUS ... 08_MINUS) and cfg (configuration numbers).
-Usage:      python build_decuplet_inputs.py --raw <dir with DEC_DP, DEC_DPP> --out <dir>
+Usage:      python build_decuplet_inputs.py --raw <dir with DEC_DP, DEC_DPP, DEC_D0, DEC_DM> --out <dir>
 """
 import argparse, glob, os, re, numpy as np
 
