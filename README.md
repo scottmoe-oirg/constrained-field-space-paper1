@@ -1,4 +1,4 @@
-# Reproducibility package: Constrained field-space estimators for background-field lattice observables
+# Reproducibility package: Constrained field-space estimators for background-field lattice QCD observables
 
 S. Moerschbacher and F. X. Lee, Phys. Rev. D (submitted). arXiv: [ARXIV ID]
 

@@ -1,5 +1,5 @@
 {
-  "title": "Reproducibility package: Constrained field-space estimators for background-field lattice observables",
+  "title": "Reproducibility package: Constrained field-space estimators for background-field lattice QCD observables",
   "upload_type": "software",
   "creators": [
     {
@@ -20,7 +20,7 @@
     "generalized least squares",
     "specification tests"
   ],
-  "description": "Analysis code and derived data for S. Moerschbacher and F. X. Lee, \"Constrained field-space estimators for background-field lattice observables\". The package reproduces every table and figure of the paper from the archival quenched nucleon and decuplet correlators (raw correlators available from the authors on request). See README.md for the stage-by-stage map and verification status.",
+  "description": "Analysis code and derived data for S. Moerschbacher and F. X. Lee, \"Constrained field-space estimators for background-field lattice QCD observables\". The package reproduces every table and figure of the paper from the archival quenched nucleon and decuplet correlators (raw correlators available from the authors on request). See README.md for the stage-by-stage map and verification status.",
   "version": "1.0.0",
   "language": "eng",
   "related_identifiers": [

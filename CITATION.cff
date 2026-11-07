@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this package, please cite the paper."
-title: "Reproducibility package: Constrained field-space estimators for background-field lattice observables"
+title: "Reproducibility package: Constrained field-space estimators for background-field lattice QCD observables"
 authors:
   - family-names: Moerschbacher
     given-names: Scott
