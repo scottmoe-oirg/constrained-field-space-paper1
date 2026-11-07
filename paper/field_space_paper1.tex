@@ -582,12 +582,13 @@ The identities constrain the first-order coefficients only. The $\Delta^+$ and $
 
 We analyze each state with the double-ratio pipeline of Sec.~\ref{sec:methods}, with delete-one replicas aligned across states on their common configurations (892 for $\Delta^+$/$\Delta^{++}$, 871 for $\Delta^0$, 901 for $\Delta^-$) and windows $t=10$--18 and 12--20 chosen from the $\Delta$ plateau. Both states of a pair are fitted to the double ratio exactly as defined in Eq.~(\ref{eq:doubleratio}); because the $\Delta^+$ ratio is not a single exponential at the larger fields, fitting its inverse instead shifts the ratio test by several standard errors. Each state's correlated fit uses its own temporal covariance, but the configuration-level fluctuations of the two field-odd responses are proportional at first order, so the identity survives the fits at that order. The ratio is formed replica by replica, so its error reflects the strong correlation between the states: the marginal moment errors are 1--6\%, while the ratio is determined to $2.5\times10^{-5}$--$3.8\times10^{-4}$ for O4--O8. At that precision the temporal-covariance noise matters, so all errors in this section come from the nested jackknife; for the O4--O8 ratios it doubles the fixed-covariance errors.
 
-\begin{table}[t]
+\begin{table*}[t]
 \caption{Deviation of the decuplet ratio $r=\mu_{\Delta^+}/\mu_{\Delta^{++}}$ from the exact value $\tfrac12$, in units of $10^{-4}$, with paired jackknife errors in parentheses (including the noise of the estimated temporal covariance) and the deviation in standard errors in square brackets. Three of the six masses are shown; the others are in the reproducibility package.}
 \label{tab:decuplet}
 \centering
-\begin{adjustbox}{max width=\columnwidth}
-\setlength{\tabcolsep}{4pt}\begin{tabular}{ccllll}
+%\begin{adjustbox}{max width=\columnwidth}
+%\setlength{\tabcolsep}{4pt}
+\begin{tabular}{ccllll}
 \toprule
 Window & $m_\pi$ [MeV] & O2 & O4 & O6 & O8\\
 \midrule
@@ -599,8 +600,27 @@ Window & $m_\pi$ [MeV] & O2 & O4 & O6 & O8\\
        & 693 & 63.1(3.3) [19] & 0.87(60) [1.4] & $-0.62(49)$ [$-1.3$] & $-0.68(48)$ [$-1.4$]\\
 \bottomrule
 \end{tabular}
-\end{adjustbox}
-\end{table}
+%\end{adjustbox}
+\end{table*}
+%
+\begin{table*}[t]
+\caption{Absolute control: $r_0=\mu_{\Delta^0}/\mu_{\Delta^{++}}$, exactly zero at first order, in units of $10^{-4}$, with nested-jackknife errors and deviations in standard errors, window 10--18. Fixed stencils and per-state covariance-optimized estimators (noise-inclusive covariance, fixed weights).}
+\label{tab:delta0}
+\centering
+%\setlength{\tabcolsep}{3pt}\resizebox{\columnwidth}{!}{%
+\begin{tabular}{rllllll}
+\toprule
+$m_\pi$ & O2 & O4 & O6 & O8 & BLUE-O4 & BLUE-O6\\
+\midrule
+338 & $-52.14(1.90)$ [$-$27.5] & $-0.96(0.07)$ [$-$13.8] & $0.001(0.019)$ [0.1] & $0.035(0.014)$ [2.6] & $-0.084(0.007)$ [$-$12.5] & $0.078(0.010)$ [7.7]\\
+362 & $-50.23(1.75)$ [$-$28.8] & $-0.90(0.06)$ [$-$13.9] & $0.004(0.017)$ [0.2] & $0.034(0.012)$ [2.7] & $-0.078(0.006)$ [$-$12.8] & $0.073(0.009)$ [7.8]\\
+384 & $-48.46(1.62)$ [$-$30.0] & $-0.84(0.06)$ [$-$14.1] & $0.006(0.016)$ [0.4] & $0.033(0.012)$ [2.8] & $-0.072(0.006)$ [$-$13.0] & $0.068(0.009)$ [8.0]\\
+405 & $-46.81(1.51)$ [$-$31.1] & $-0.78(0.06)$ [$-$14.1] & $0.009(0.015)$ [0.6] & $0.032(0.011)$ [3.0] & $-0.067(0.005)$ [$-$13.3] & $0.063(0.008)$ [8.0]\\
+444 & $-43.83(1.33)$ [$-$33.1] & $-0.68(0.05)$ [$-$14.2] & $0.012(0.013)$ [1.0] & $0.030(0.009)$ [3.2] & $-0.058(0.004)$ [$-$13.7] & $0.055(0.007)$ [8.1]\\
+693 & $-28.60(0.70)$ [$-$40.8] & $-0.27(0.02)$ [$-$11.1] & $0.022(0.006)$ [3.7] & $0.021(0.004)$ [5.2] & $-0.021(0.001)$ [$-$15.0] & $0.019(0.002)$ [7.8]\\
+\bottomrule
+\end{tabular}%}
+\end{table*}
 
 \begin{figure*}[t]
 \centering\includegraphics[width=\textwidth]{fig_decuplet_ratio_test_v5.pdf}
@@ -612,24 +632,6 @@ Table~\ref{tab:decuplet} and Fig.~\ref{fig:decuplet}(b) show the $\Delta^+$ resu
 
 The $\Delta^0$ supplies an \emph{absolute} test: its weak-field moment is exactly zero, so any stencil output is pure higher-order leakage (Table~\ref{tab:delta0}). Expressed relative to the $\Delta^{++}$ moment on common configurations, O2 gives $-0.29$\% to $-0.52$\% (28--41$\sigma$) in the 10--18 window and $-0.46$\% to $-0.96$\% (15--37$\sigma$) in 12--20, O4 $-0.003$\% to $-0.010$\% (11--14$\sigma$) and $-0.008$\% to $-0.031$\% (12--15$\sigma$), and O6 at most $2\times10^{-6}$ in magnitude in the 10--18 window, within $1\sigma$ at the five lighter masses ($3.7\sigma$ at the heaviest) and $-1.8\times10^{-5}$ to $10^{-6}$ ($-3.6$ to $+0.4\sigma$) in the 12--20 window. At this precision, which reaches $10^{-6}$, small departures from the O6 family are resolved, consistent with the $\Delta^0$ O6 null test ($\chi^2_{\rm null}=14$--99 except at the heaviest mass in 10--18), but they are four orders of magnitude below the O2 leakage. O8, which gives weight to the strongly mixed $8B$ point, is displaced by 2.6--5.2$\sigma$ in the 10--18 window (0.7--3.5$\sigma$ in 12--20) at the same $10^{-6}$ level. The $\Delta^-$, which like the $\Delta^{++}$ has no nucleon partner, satisfies $\mu_{\Delta^-}/\mu_{\Delta^{++}}=-\tfrac12$ within $1.7\sigma$ for every stencil, including O2, at errors of $8\times10^{-5}$--$2\times10^{-3}$.
 
-\begin{table}[t]
-\caption{Absolute control: $r_0=\mu_{\Delta^0}/\mu_{\Delta^{++}}$, exactly zero at first order, in units of $10^{-4}$, with nested-jackknife errors and deviations in standard errors, window 10--18. Fixed stencils and per-state covariance-optimized estimators (noise-inclusive covariance, fixed weights).}
-\label{tab:delta0}
-\centering
-\setlength{\tabcolsep}{3pt}\resizebox{\columnwidth}{!}{%
-\begin{tabular}{rllllll}
-\toprule
-$m_\pi$ & O2 & O4 & O6 & O8 & BLUE-O4 & BLUE-O6\\
-\midrule
-338 & $-52.14(1.90)$ [-27.5] & $-0.96(0.07)$ [-13.8] & $0.001(0.019)$ [0.1] & $0.035(0.014)$ [2.6] & $-0.084(0.007)$ [-12.5] & $0.078(0.010)$ [7.7]\\
-362 & $-50.23(1.75)$ [-28.8] & $-0.90(0.06)$ [-13.9] & $0.004(0.017)$ [0.2] & $0.034(0.012)$ [2.7] & $-0.078(0.006)$ [-12.8] & $0.073(0.009)$ [7.8]\\
-384 & $-48.46(1.62)$ [-30.0] & $-0.84(0.06)$ [-14.1] & $0.006(0.016)$ [0.4] & $0.033(0.012)$ [2.8] & $-0.072(0.006)$ [-13.0] & $0.068(0.009)$ [8.0]\\
-405 & $-46.81(1.51)$ [-31.1] & $-0.78(0.06)$ [-14.1] & $0.009(0.015)$ [0.6] & $0.032(0.011)$ [3.0] & $-0.067(0.005)$ [-13.3] & $0.063(0.008)$ [8.0]\\
-444 & $-43.83(1.33)$ [-33.1] & $-0.68(0.05)$ [-14.2] & $0.012(0.013)$ [1.0] & $0.030(0.009)$ [3.2] & $-0.058(0.004)$ [-13.7] & $0.055(0.007)$ [8.1]\\
-693 & $-28.60(0.70)$ [-40.8] & $-0.27(0.02)$ [-11.1] & $0.022(0.006)$ [3.7] & $0.021(0.004)$ [5.2] & $-0.021(0.001)$ [-15.0] & $0.019(0.002)$ [7.8]\\
-\bottomrule
-\end{tabular}}
-\end{table}
 
 \subsection{Specification tests}
 
