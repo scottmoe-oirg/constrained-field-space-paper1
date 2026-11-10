@@ -1,6 +1,6 @@
 # Reproducibility package: Constrained field-space estimators for background-field lattice QCD observables
 
-S. Moerschbacher and F. X. Lee, arXiv: [ARXIV ID] (2026).
+S. Moerschbacher and F. X. Lee, arXiv:2611.10773 [hep-lat] (2026), https://arxiv.org/abs/2611.10773.
 Code and derived data: doi:10.5281/zenodo.23869797 · https://github.com/scottmoe-oirg/constrained-field-space-paper1
 
 This package contains the code that produces every table and figure of the paper from the archived

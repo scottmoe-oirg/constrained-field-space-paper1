@@ -12,3 +12,16 @@ license: MIT
 doi: "10.5281/zenodo.23869797"
 repository-code: "https://github.com/scottmoe-oirg/constrained-field-space-paper1"
 version: "1.0.0"
+preferred-citation:
+  type: article
+  title: "Constrained field-space estimators for background-field lattice QCD observables"
+  authors:
+    - family-names: Moerschbacher
+      given-names: Scott
+    - family-names: Lee
+      given-names: Frank X.
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2611.10773"
+  url: "https://arxiv.org/abs/2611.10773"
